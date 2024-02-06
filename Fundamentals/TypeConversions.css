@@ -1,0 +1,59 @@
+*{
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+h1{
+    text-align: center;
+    background: #98e4c2c1;
+    padding: 5px;
+}
+h2{
+    text-decoration: underline;
+}
+p{
+    font-size: 18px;
+}
+#article2{
+    width: 90%;
+    margin: auto;
+}
+.diveven{
+    background: #d6d3d398;
+    padding: 15px;
+}
+.divodd{
+    background-color: rgba(251, 214, 245, 0.72);
+    padding: 15px;
+}
+input[type=text]{
+    width: 50%;
+    height: 40px;
+    border-radius: 20px ;
+    font-size: 20px;
+    padding: 5px;
+    margin: 5px;
+    background-color: rgba(206, 234, 180, 0.934);
+    box-shadow: 5px 5px 4px green;
+}
+
+input[type=button]{
+    padding: 5px;
+    color: white;
+    font-size: large;
+    background: #3b076f;
+    border-radius: 20px;
+    box-shadow: 5px 5px 4px rgba(20, 19, 20, 0.833);
+    cursor: pointer;
+}
+#StringData,#NumberData,#BooleanData{
+    width: 30%;
+    margin: 30px;
+    font-size: large;
+    margin-left: 60px;
+}
+
+.divborder{
+    border: 2px solid black;
+    background: #fff;
+    box-shadow: 5px 5px 2px grey;
+    height: 10vh;
+}

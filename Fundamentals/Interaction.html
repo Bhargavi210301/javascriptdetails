@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Interaction</title>
+    <link rel="stylesheet" href="Interaction.css">
+</head>
+<body>
+    <h1>Interaction: alert, prompt, confirm</h1>
+
+    <article id="article2">
+        <form onsubmit="false">
+            <div class="subdata">
+                <h2>Alert</h2>
+                <input id="AlertInput" type="text" placeholder="Enter text to alert" onkeydown="down(this)" onkeyup="up(this)"><br><br>
+                <input type="button" onclick="Alretme()" value="Alert"></input><br><br>
+            </div>
+
+            <div class="subdata">
+                <h2>Prompt</h2>
+                <input id="inputdataPrompt" type="text"  placeholder="Enter Your name" onkeydown="down(this)" onkeyup="up(this)"><br><br>
+                <input type="button" onclick="Promptme()" value="Prompt"></input><br>
+                <div id="PromptData"></div><br><br>
+            </div>
+
+            <div class="subdata">
+                <h2>Confirm</h2>
+                <label>Try Out the confirm Button.</label>
+                <input type="button" value="Confirm" onclick="ConfirmMe()"><br>
+                <div id="ConfirmData"></div>
+            </div>
+        </form>
+        <script src="D:\Dynamisch\WebDevelopment\Javascript\JavascriptDetails\Basic.js"></script>
+
+        <p id="seemore"><a href="https://javascript.info/alert-prompt-confirm">See more about Interactions</a></p>
+
+    </article>
+</body>
+</html>

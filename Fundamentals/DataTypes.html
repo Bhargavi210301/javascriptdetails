@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Data types</title>
+    <link rel="stylesheet" href="Variables&DataTypes.css">
+</head>
+<body>
+    <h1>Data types</h1>
+    <article id="article2">
+        <p>A value in JavaScript is always of a certain type. For example, a string or a number.
+
+            There are eight basic data types in JavaScript. Here, we’ll cover them in general and in the next chapters we’ll talk about each of them in detail.
+            
+            We can put any type in a variable. For example, a variable can at one moment be a string and then store a number</p>
+
+        <p>The Data Types in JavaScript are as follows</p>
+        <ol id="mylist">
+            <li><a href="#Number">Number</a></li>
+            <li><a href="#BigInt">BigInt</a></li>
+            <li><a href="#String">String</a></li>
+            <li><a href="#Boolean">Boolean (logical type)</a></li>
+            <li><a href="#null">The “null” value</a></li>
+            <li><a href="#undefined">The “undefined” value</a></li>
+            <li><a href="#Objects">Objects and Symbols</a></li>
+        </ol>
+
+        <div class="diveven" id="Number">
+            <h2>1.Number</h2>
+            <p>The number type represents both integer and floating point numbers.There are many operations for numbers, e.g. multiplication *, division /, addition +, subtraction -, and so on.Besides regular numbers, there are so-called “special numeric values” which also belong to this data type: Infinity, -Infinity and NaN.
+            </p>
+            <h3>Example</h3>
+            <p>let n = 123;</p>
+            <p>let num=12.85</p>
+        </div>
+
+        <div class="divodd" id="BigInt">
+            <h2>2.BigInt</h2>
+            <p>In JavaScript, the “number” type cannot safely represent integer values larger than (253-1) (that’s 9007199254740991), or less than -(253-1) for negatives.To be really precise, the “number” type can store larger integers (up to 1.7976931348623157 * 10308), but outside of the safe integer range ±(253-1) there’ll be a precision error, because not all digits fit into the fixed 64-bit storage. So an “approximate” value may be stored.
+            </p>
+            <h3>Example</h3>
+            <p>console.log(9007199254740991 + 1);</p>
+            <p>const bigInt = 1234567890123456789012345678901234567890n;</p>
+        </div>
+
+        <div class="diveven" id="String">
+            <h2>3.String</h2>
+            <p>A string in JavaScript must be surrounded by quotes.In JavaScript, there are 3 types of quotes.<br>Double quotes: "Hello".<br>Single quotes: 'Hello'.<br>Backticks: `Hello`.
+            </p>
+            <h3>Example</h3>
+            <p>let str = "Hello";</p>
+            <p>const bigInt = 1234567890123456789012345678901234567890n;</p>
+            <p>alert( "the result is ${1 + 2}" ); // the result is ${1 + 2} (double quotes do nothing)</p>
+        </div>
+
+        <div class="divodd" id="Boolean">
+            <h2>4.Boolean</h2>
+            <p>The boolean type has only two values: true and false.This type is commonly used to store yes/no values: true means “yes, correct”, and false means “no, incorrect”.
+            </p>
+            <h3>Example</h3>
+            <p>let nameFieldChecked = true; // yes, name field is checked</p>
+            <p>let ageFieldChecked = false; // no, age field is not checked</p>
+        </div>
+
+        <div class="diveven" id="null">
+            <h2>5.The “null” value</h2>
+            <p>The special null value does not belong to any of the types described above.It forms a separate type of its own which contains only the null value:        
+            </p>
+            <h3>Example</h3>
+            <p>let age = null;</p>
+        </div>
+        <div class="divodd" id="undefined">
+            <h2>6.The “undefined” value</h2>
+            <p>The special value undefined also stands apart. It makes a type of its own, just like null.The meaning of undefined is “value is not assigned”.If a variable is declared, but not assigned, then its value is undefined:     
+            </p>
+            <h3>Example</h3>
+            <p>let age ;<br>alert(age); // shows "undefined"</p>
+        </div>
+
+        <div class="diveven" id="Objects">
+            <h2>7.Objects and Symbols</h2>
+            <p>The object type is special.All other types are called “primitive” because their values can contain only a single thing (be it a string or a number or whatever). In contrast, objects are used to store collections of data and more complex entities.Being that important, objects deserve a special treatment. We’ll deal with them later in the chapter Objects, after we learn more about primitives.The symbol type is used to create unique identifiers for objects. We have to mention it here for the sake of completeness, but also postpone the details till we know objects.  
+            </p>
+            <h3>Example</h3>
+            <p>const kenscar = new Car("Nissan", "300ZX", 1992);  //here kenscar is object instance </p>
+        </div>
+        <p id="seemore"><a href="https://javascript.info/types">See more about DataTypes</a></p>
+    </article>
+</body>
+</html>

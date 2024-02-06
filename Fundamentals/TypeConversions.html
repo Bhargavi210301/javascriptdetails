@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Type Conversions</title>
+    <link rel="stylesheet" href="TypeConversions.css">
+</head>
+<body>
+    <h1>Type Conversions</h1>
+    <article id="article2">
+        <p>Most of the time, operators and functions automatically convert the values given to them to the right type.
+            For example, alert automatically converts any value to a string to show it. Mathematical operations convert values to numbers.
+            There are also cases when we need to explicitly convert a value to the expected type.
+        </p>
+        <div class="diveven">
+            <h2>String Conversion</h2>
+            <p>String conversion happens when we need the string form of a value.<br>Lets try is out!!</p>
+            <input type="text" id="convertToString" placeholder="enter data to convert it into String">
+            <input type="button" onclick="ConverttoString()" value="Convert to String"><br><br>
+            <div id="StringData"></div>
+        </div>
+
+        <div class="divodd">
+            <h2>Number Conversion</h2>
+            <p>Numeric conversion in mathematical functions and expressions happens automatically.<br>Lets try is out!!</p>
+            <input type="text" id="convertToNumber" placeholder="enter String to convert it into Number">
+            <input type="button" onclick="ConverttoNumber()" value="Convert to Number"><br><br>
+            <div id="NumberData"></div>
+        </div>
+
+        <div class="diveven">
+            <h2>Bolean Conversion</h2>
+            <p>Boolean conversion is the simplest one.
+                It happens in logical operations (later we’ll meet condition tests and other similar things) but can also be performed explicitly with a call to Boolean(value).<br>
+                The conversion rule:
+                Values that are intuitively “empty”, like 0, an empty string, null, undefined, and NaN, become false.
+                Other values become true.<br>Lets try is out!!</p>
+            <input type="text" id="booleaninput" placeholder="enter 0 or 1" pattern="^[0,1]{1}$" title="Enter valid input" required>
+            <input type="button" onclick="ConverttoBoolean()" value="Convert to Boolean"><br><br>
+            <div id="BooleanData"></div>
+
+        </div>
+        <p id="seemore"><a href="https://javascript.info/type-conversions">See more about Variables</a></p>
+    </article>
+
+        <script src="TypeConversion.js"></script>
+</body>
+</html>
